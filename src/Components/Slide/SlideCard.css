@@ -1,0 +1,19 @@
+.slick-next:before, .slick-prev:before {
+    display: none;
+}
+.width-item {
+    width: 100%  !important;
+}
+
+.active_Lotteries {
+    @apply bg-blue-500 text-white;
+}
+
+
+.none_active_Film {
+    @apply bg-transparent;
+}
+
+.Slide-card {
+    background-color: #F0F2F5;
+}

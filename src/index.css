@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "digital";
+  src: url("/src/fonts/digital-7.ttf");
+}
+
+
+#root {
+  background-image: url("./Assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#container {
+  background-color: rgba(0,0,0,0.6);
+}

@@ -1,0 +1,45 @@
+/* tbody tr {
+  @apply hover:scale-125 hover:bg-gray-200 hover:border-2 hover:p-2 hover:rounded-md hover:shadow-md;
+} */
+
+.table-lotteries td:hover {
+  @apply scale-110 bg-gray-200;
+}
+
+.table-lotteries th, td {
+  @apply p-2 rounded-md bg-white;
+}
+
+/* .table-lotteries th {
+  @apply border-t-2 border-l-2 border-gray-200;
+}*/
+
+.table-lotteries td {
+  @apply border-2  border-gray-200;
+} 
+
+.table-lotteries td p {
+  @apply font-bold text-center;
+}
+
+.table-lotteries th {
+  @apply text-left;
+}
+
+/* .table-lotteries {
+  @apply border-t-2 border-gray-200;
+} */
+
+.table-lotteries tr td {
+  @apply border-2 border-slate-300;
+}
+
+.table-lotteries tr td p.number-table {
+  @apply font-digital;
+}
+
+.table-lotteries tr th p {
+  @apply text-center;
+}
+
+

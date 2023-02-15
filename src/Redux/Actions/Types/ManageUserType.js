@@ -1,0 +1,9 @@
+export const LOGIN = "LOGIN";
+export const LOGOUT = "LOGOUT";
+export const SIGNUP = "SIGNUP";
+export const LOGIN_WITH_GOOGLE = "LOGIN_WITH_GOOGLE";
+export const SET_USERS = "SET_USERS";
+export const ADD_NEW_USER = "ADD_NEW_USER";
+export const SET_UPDATE_USER = "SET_UPDATE_USER";
+export const CHANGE_PROFILE = "CHANGE_PROFILE";
+export const CHANGE_PASSWORD = "CHANGE_PASSWORD";
