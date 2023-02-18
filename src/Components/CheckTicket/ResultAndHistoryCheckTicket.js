@@ -24,8 +24,23 @@ export default function ResultAndHistoryCheckTicket(props) {
     return perPageCheckTicketHistory?.map((item, index) => {
       return (
         <div key={index} className="xl:w-1/3 md:w-1/2 p-4">
-          <div className="border border-gray-200 p-6 rounded-lg">
-            <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+          <div 
+            className="
+              border-1 border-gray-300 rounded-lg
+              p-6
+              bg-blue-card
+            "
+          >
+            <h2 
+              className="
+                text-lg 
+                text-gray-900 
+                font-medium title-font 
+                mb-2
+                pb-4
+                border-b-2 border-black
+              "
+            >
               VÉ {item.ticket}
             </h2>
             <hr />
@@ -45,12 +60,34 @@ export default function ResultAndHistoryCheckTicket(props) {
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 mx-auto">
-        <div className="flex flex-wrap w-full mb-20 flex-col items-center text-left">
-          <div className="border border-gray-200 p-6 rounded-lg w-full">
-            <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+        <div 
+          className="
+            flex flex-wrap flex-col items-center 
+            w-full
+            mb-20
+            text-left
+          "
+        >
+          <div 
+            className="
+              bg-blue-card
+              border-1 border-gray-300 
+              rounded-lg
+              p-6 w-1/3
+            "
+          >
+            <h2 
+              className="
+                text-lg 
+                text-gray-900 
+                font-medium title-font 
+                mb-2
+                pb-4
+                border-b-2 border-black
+              "
+            >
               THÔNG TIN VỪA DÒ:
             </h2>
-            <hr />
             <p className="leading-relaxed text-base mt-2">
               VÉ: {checkTicketResult.ticket}{" "}
             </p>

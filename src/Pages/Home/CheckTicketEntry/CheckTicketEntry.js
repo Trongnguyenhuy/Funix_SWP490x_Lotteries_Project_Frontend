@@ -8,9 +8,9 @@ export default function CheckTicketEntry() {
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div className=" bg-white rounded-md grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="bg-white rounded-md grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className="p-8 flex flex-col justify-center items-center">
-        <div className="w-full lg:w-4/5 border-2 border-gray-200 p-6 rounded-lg shadow-lg">
+        <div className="bg-blue-card w-full lg:w-4/5 border-2 border-gray-200 p-6 rounded-lg shadow-lg">
           <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-gray-400">
             DÒ VÉ SỐ VỚI LotteryR
           </h1>

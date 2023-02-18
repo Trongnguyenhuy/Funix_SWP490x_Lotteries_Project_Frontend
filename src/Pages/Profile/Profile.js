@@ -19,6 +19,7 @@ import TicketCard from "../../Components/TicketCard/TicketCard";
 import PaginationComponent from "../../Components/Pagination/Pagination";
 
 export default function Profile(props) {
+  document.title = "PROFILE"
   const { updateUser, arrTickets, userLogin } = useSelector(
     (state) => state.ManageUserReducer
   );
@@ -57,7 +58,7 @@ export default function Profile(props) {
       >
         <div
           className="
-            bg-white 
+            bg-blue-card  
             rounded-md 
             text-black 
             p-4
@@ -65,7 +66,7 @@ export default function Profile(props) {
         >
           <div
             className="
-              border-b-2 border-gray-200 
+              border-b-2 border-black
               flex flex-col items-start
             "
           >
@@ -99,13 +100,13 @@ export default function Profile(props) {
             }`}
           >
             {updateUser?.isAdmin ? (
-              <p className="flex flex-row justify-start gap-2">
-                <RiAdminLine className="text-xl text-red-500 font-semibold" /> Quản Trị
+              <p className="flex flex-row justify-start gap-2 font-bold">
+                <RiAdminLine className="text-xl text-red-500" /> Quản Trị
                 Viên
               </p>
             ) : (
-              <p className="flex flex-row justify-start gap-2">
-                <RiUserLine className="text-xl text-blue-500 font-semibold" /> Người
+              <p className="flex flex-row justify-start gap-2 font-bold">
+                <RiUserLine className="text-xl text-blue-500" /> Người
                 Dùng Thường
               </p>
             )}
@@ -195,7 +196,7 @@ export default function Profile(props) {
           </h2>
           <div
             className="
-              grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4
+              grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 
               p-2
             "
           >

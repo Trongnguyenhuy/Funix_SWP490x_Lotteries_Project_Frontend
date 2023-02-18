@@ -105,7 +105,7 @@ export default function Signup(props) {
                     ? "border-red-500"
                     : "border-gray-300"
                 }`}
-                placeholder="Nhập Vào Mật Khẩu Của Bạn"
+                placeholder="NHẬP VÀO MẬT KHẨU CỦA BẠN"
                 id="password"
                 name="password"
                 type="password"
@@ -125,12 +125,12 @@ export default function Signup(props) {
                           shadow-lg"
                 type="submit"
               >
-                Đăng Ký
+                ĐĂNG KÝ
               </button>
             </div>
           </form>
           <div className="mt-8 py-4 text-sm font-display font-semibold text-white text-center border-t-2 border-gray-200">
-            Sử Dụng Tài Khoản Mạng Xã Hội?{" "}
+            SỬ DỤNG TÀI KHOẢN MẠNG XÃ HỘI?{" "}
             <div className="flex justify-center">
               <a
                 href="http://localhost:8080/usermanager/auth/google"

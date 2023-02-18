@@ -43,7 +43,18 @@ export default class HomeCarouselSlide extends Component {
                 className="w-full max-h-fit lg:max-h-[32rem]  opacity-0"
               />
             </div>
-            <div className="absolute bottom-2 left-14 md:left-1/3 lg:bottom-10 lg:left-32 z-20">
+            <div 
+              className="
+                  absolute 
+                  bottom-2 left-8 
+                  md:left-16 md:bottom-5 lg:bottom-10 lg:left-32 
+                  z-20
+                  flex flex-col items-center justify-start
+                  w-52 h-24 lg:h-56 lg:w-80
+                  bg-black bg-opacity-60 
+                  rounded-md
+                "
+            >
               <CountDownTimer item={item} />
             </div>
           </div>
@@ -61,7 +72,12 @@ export default class HomeCarouselSlide extends Component {
       cssEase: "linear",
     };
     return (
-      <div className="relative">
+      <div 
+        className="
+          relative
+          pt-24 md:pt-0
+        "
+      >
         <Slider ref={(c) => (this.slider = c)} {...settings}>
           {renderImg()}
         </Slider>

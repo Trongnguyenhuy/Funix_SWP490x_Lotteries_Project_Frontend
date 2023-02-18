@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function SummaryCard(props) {
   const { arr, text } = props;
   return (
-    <div className="border-2 border-gray-200 rounded-xl shadow-2xl relative p-2 mt-4">
+    <div className="border-2 border-gray-200 rounded-xl shadow-2xl relative p-2 mt-4 bg-blue-card">
       <div className="absolute left-5 -top-8 bg-red-200 p-4 w-1/4  h-16 flex flex-col items-center justify-center">
         <h2 className="text-center text-xl font-bold p-2">{text}</h2>
       </div>

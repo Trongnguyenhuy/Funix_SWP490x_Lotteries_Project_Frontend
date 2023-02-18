@@ -236,6 +236,7 @@ export default function AdminTemplate(props) {
                       flex flex-row justify-start items-center gap-4
                       border-1 border-blue-500 rounded-md shadow-md 
                       p-4 my-1
+                      bg-blue-card
                     "
                 >
                   <Button
@@ -255,12 +256,16 @@ export default function AdminTemplate(props) {
                   />
                   <p
                     className="
+                      flex flex-row gap-1 justify-start
                       text-center 
                       text-base font-normal
                       mt-2
                     "
                   >
-                    Xin Chào! {userLogin?.name?.toUpperCase()}.
+                    Xin Chào! 
+                    <span className="font-bold">
+                    {userLogin?.name?.toUpperCase()}.
+                    </span>
                   </p>
                 </div>
                 <Button

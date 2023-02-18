@@ -29,7 +29,7 @@ export default function TableLotteryDetail(props) {
                 className={`${
                   lottery.result.eighthNum.length >= 1
                     ? "text-red-500 font-bold text-2xl my-auto number-table"
-                    : "font-bold text-2xl my-auto"
+                    : "font-bold text-base my-auto"
                 }`}
               >
                 {lottery.result.eighthNum.length >= 1
@@ -46,7 +46,7 @@ export default function TableLotteryDetail(props) {
               <p
                 className={`${
                   lottery.result.eighthNum.length < 1
-                    ? "text-red-500 font-bold text-2xl my-auto"
+                    ? "text-red-500 font-bold text-2xl my-auto number-table"
                     : "font-bold text-2xl my-auto number-table"
                 }`}
               >

@@ -41,11 +41,11 @@ export default function LotteryCard(props) {
       className={`
         w-52 md:w-60 lg:w-72 
         flex flex-col 
-        bg-white 
         rounded-lg shadow-xl 
         border-2 border-gray-200 
         hover:border-gray-400 
         relative
+        bg-blue-card
       `}
     >
       <div className="text-black p-2 flex justify-start items-center gap-2">
@@ -57,7 +57,7 @@ export default function LotteryCard(props) {
           />
         </div>
         <div className="flex justify-start items-center w-full">
-          <h4 className="text-sm font-bold text-center border-b-2 border-gray-200">
+          <h4 className="text-sm font-bold text-center border-b-2 border-black">
             VÉ DÒ {lottery.stationId.name.toUpperCase()}{" "}
             {lottery.stationId.zoneCode === "MB01"
               ? " - " + coverDateToDayVn(lottery.date).toLocaleUpperCase()
@@ -79,15 +79,14 @@ export default function LotteryCard(props) {
           className={`opacity-0 w-1/2 h-28`}
         />
       </div>
-      <div className="text-black p-2 mt-2">
-        <hr />
-        <p className="flex mt-2">
+      <div className="text-black p-2">
+        <p className="flex border-t-2 border-black pt-2">
           <BsCalendarWeek className="text-xl mr-2" /> NGÀY: {lottery.date}
         </p>
       </div>
       {newLottery && (
-        <div 
-        className="
+        <div
+          className="
           flex flex-row justify-between items-start
           bg-red-500 opacity-60
           text-white 
@@ -95,7 +94,7 @@ export default function LotteryCard(props) {
           absolute -top-2 right-2 
         "
         >
-          <p 
+          <p
             className="
               font-normal lg:font-bold 
               text-center 

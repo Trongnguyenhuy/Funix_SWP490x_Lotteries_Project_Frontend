@@ -12,6 +12,7 @@ const TicketCard = (props) => {
   return (
     <div
       className="
+        bg-blue-card 
         border-2 border-gray-300 
         rounded-lg shadow-lg 
         hover:border-gray-500 hover:shadow-2xl
@@ -32,7 +33,7 @@ const TicketCard = (props) => {
       </div>
       <div
         className="
-          border-t-2 border-gray-300 
+          border-t-2 border-black
         "
       >
         <p className="leading-relaxed text-base mt-2">

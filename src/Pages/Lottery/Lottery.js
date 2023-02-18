@@ -205,7 +205,8 @@ export default function Lotteries(props) {
               <div className="grid grid-rows-2 gap-4 justify-items-center text-black p-2">
                 <button
                   onClick={() => {
-                    setShowAll(!showAll);
+                    setSearchMode(false);
+                    setShowAll(prev => !prev);
                   }}
                   className="w-full flex items-center border-2 border-gray-200 p-1 rounded-md"
                 >
